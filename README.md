@@ -4,27 +4,34 @@ In this project, I will be working with a dataset related to a game. The dataset
 `Player Details` and `Level Details`. There are 15 questions for which I have to find the answers by
 writing SQL queries.
 
+
 Dataset Description:
+
+
 Player Details Table:
- `P_ID`: Player ID
- `PName`: Player Name
- `L1_status`: Level 1 Status
- `L2_status`: Level 2 Status
- `L1_code`: Systemgenerated Level 1 Code
- `L2_code`: Systemgenerated Level 2 Code
-Level Details Table:
- `P_ID`: Player ID
- `Dev_ID`: Device ID
- `start_time`: Start Time
- `stages_crossed`: Stages Crossed
- `level`: Game Level
- `difficulty`: Difficulty Level
- `kill_count`: Kill Count
- `headshots_count`: Headshots Count
- `score`: Player Score
- `lives_earned`: Extra Lives Earned
-What you have to do?
-Use the “Game Analysis.sql” file. Below are 15 questions for which you have to find the answers
+ 1. `P_ID`: Player ID
+2. `PName`: Player Name
+3.  `L1_status`: Level 1 Status
+4.`L2_status`: Level 2 Status
+5. `L1_code`: Systemgenerated Level 1 Code
+6. `L2_code`: Systemgenerated Level 2 Code
+
+ Level Details Table:
+ 
+1.  `P_ID`: Player ID
+2. `Dev_ID`: Device ID
+3. `start_time`: Start Time
+4.`stages_crossed`: Stages Crossed
+5. `level`: Game Level
+6. `difficulty`: Difficulty Level
+7. `kill_count`: Kill Count
+8. `headshots_count`: Headshots Count
+9. `score`: Player Score
+10. `lives_earned`: Extra Lives Earned
+
+    
+What I have to do?
+Use the “Game Analysis.sql” file. Below are 15 questions for which I have to find the answers
 by writing SQL queries. Each question carries 2 marks.
 1. Extract `P_ID`, `Dev_ID`, `PName`, and `Difficulty_level` of all players at Level 0.
 2. Find `Level1_code`wise average `Kill_Count` where `lives_earned` is 2, and at least 3
