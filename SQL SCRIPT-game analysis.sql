@@ -41,16 +41,15 @@ ADD CONSTRAINT pk_level_details2 PRIMARY KEY (P_ID, Dev_id, start_datetime);
  -- Q1) Extract P_ID,Dev_ID,PName and Difficulty_level of all players 
 -- at level 0
 
--- PLAYER DETAILS LIST--
-SELECT P_ID, PName, L1_Status , L2_Status
-FROM player_details 
+
+SELECT pd.P_ID, pd.PName,
+ld.Dev_ID,ld.Difficulty
+FROM player_details AS pd
+JOIN level_details2 AS ld
+ON pd.P_ID = ld.P_ID
 WHERE L1_Status = '0'
 AND L2_Status = '0';
 
--- LEVEL DETAILS LIST --
-SELECT Dev_ID, Difficulty,Level 
-FROM level_details2
-WHERE Level = '0';
 
 -- Q2) Find Level1_code wise Avg_Kill_Count where lives_earned is 2 and atleast
 --    3 stages are crossed
